@@ -1,0 +1,237 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.btn-container {
+  height: 100vh;
+  /* Bir ögeyi blok düzeyinde esnek kapsayıcı olarak görüntüler */
+  display: flex;
+  /* Ögeler kabın ortasına yerleştirilir (sağ sol)*/
+  justify-content: center;
+  /* Öğeler kabın ortasına yerleştirilir (alt üst)*/
+  align-items: center;
+}
+
+.btn-instagram {
+  min-width: 110px;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #c71e7e;
+  display: flex;
+  margin-right: 10px;
+}
+.btn-instagram i {
+  color: #df3796;
+  font-size: 25px;
+  padding-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-instagram span {
+  font-family: "Roboto", sans-serif;
+  align-self: center;
+  transform: translateX(0px);
+  transition: all 0.1s ease-in-out;
+  opacity: 1;
+}
+.btn-instagram:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #ff3019 0%, #c90477 100%);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.btn-instagram:hover i {
+  transform: translateX(45px);
+  padding-right: 0;
+  color: #fff;
+}
+.btn-instagram:hover span {
+  transform: translateX(30px);
+  opacity: 0;
+}
+.btn-instagram:active {
+  transform: scale(1);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-facebook {
+  min-width: 110px;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #286ed6;
+  display: flex;
+  /* ikonlar arasınıda boşluk oluşturma */
+  margin-right: 10px;
+}
+.btn-facebook i {
+  color: #286ed6;
+  font-size: 25px;
+  padding-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-facebook span {
+  font-family: "Roboto", sans-serif;
+  align-self: center;
+  transform: translateX(0px);
+  transition: all 0.1s ease-in-out;
+  opacity: 1;
+}
+.btn-facebook:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, rgb(143, 176, 209) 0%, #286ed6 100%);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.btn-facebook:hover i {
+  transform: translateX(45px);
+  padding-right: 0;
+  color: #fff;
+}
+.btn-facebook:hover span {
+  transform: translateX(30px);
+  opacity: 0;
+}
+.btn-facebook:active {
+  transform: scale(1);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-linkedin{
+    min-width: 110px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #007bb5;
+    display: flex;
+    margin-right: 10px;
+}
+.btn-linkedin i{
+    color: #007bb5;
+    font-size: 25px;
+    padding-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-linkedin span{
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+    transform: translateX(0px);
+    transition: all 0.1s ease-in-out;
+    opacity: 1;
+}
+/* ikonların üzerine gidildiğinde */
+.btn-linkedin:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right, rgb(165, 210, 231) 0%, #007bb5 100%);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+/* logo hareketliliği */
+.btn-linkedin:hover i{
+    transform: translateX(45px);
+    padding-right: 0;
+    color: #fff;
+}
+/* logo belirginlik */
+.btn-linkedin:hover span{
+    transform: translateX(30px);
+    opacity: 0;
+}
+/* ikona tıkladığında çerçeve */
+.btn-linkedin:active{
+    transform: scale(1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-github{
+    min-width: 110px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #171515;
+    display: flex;
+    margin-right: 10px;
+}
+.btn-github i{
+    color: #171515;
+    font-size: 25px;
+    padding-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-github span{
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+    transform: translateX(0px);
+    transition: all 0.1s ease-in-out;
+    opacity: 1;
+}
+/* ikonların üzerine gidildiğinde */
+.btn-github:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right, #171515 0%, rgb(199, 32, 171) 100%);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+/* logo hareketliliği */
+.btn-github:hover i{
+    transform: translateX(45px);
+    padding-right: 0;
+    color: #fff;
+}
+/* logo belirginlik */
+.btn-github:hover span{
+    transform: translateX(30px);
+    opacity: 0;
+}
+/* ikona tıkladığında çerçeve */
+.btn-github:active{
+    transform: scale(1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-youtube{
+    min-width: 110px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #c4302b;
+    display: flex;
+    margin-right: 10px;
+}
+.btn-youtube i{
+    color: #c4302b;
+    font-size: 25px;
+    padding-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-youtube span{
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+    transform: translateX(0px);
+    transition: all 0.1s ease-in-out;
+    opacity: 1;
+}
+/* ikonların üzerine gidildiğinde */
+.btn-youtube:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right, #521818 0%, #c4302b 100%);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+/* logo hareketliliği */
+.btn-youtube:hover i{
+    transform: translateX(45px);
+    padding-right: 0;
+    color: #fff;
+}
+/* logo belirginlik */
+.btn-youtube:hover span{
+    transform: translateX(30px);
+    opacity: 0;
+}
+/* ikona tıkladığında çerçeve */
+.btn-youtube:active{
+    transform: scale(1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
